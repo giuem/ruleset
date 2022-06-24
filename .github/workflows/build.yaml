@@ -25,6 +25,7 @@ jobs:
           node-version-file: '.nvmrc'
           cache: 'pnpm'
       - run: pnpm install
+      - run: mkdir output
       - run: node scripts/ros-cn-ip.mjs
       - name: release
         uses: peaceiris/actions-gh-pages@v3

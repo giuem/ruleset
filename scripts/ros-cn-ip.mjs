@@ -43,7 +43,7 @@ async function main() {
     script += `:do { add address=${ip} list=China } on-error={}\n`;
   });
 
-  return fse.writeFile(path.join(__dirname, "../output/ros/china.rsc"), script, 'utf8');
+  return fse.writeFile(path.join(__dirname, "../output/china-ip.rsc"), script, 'utf8');
 }
 
 main();
