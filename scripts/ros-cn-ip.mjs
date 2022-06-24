@@ -1,19 +1,19 @@
 import fetch from "node-fetch";
-import fse from 'fs-extra';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import fse from "fs-extra";
+import path from "path";
+import { fileURLToPath } from "url";
 import cidrTools from "cidr-tools";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 /**
- * 
- * @param {string} cidr 
- * @returns 
+ *
+ * @param {string} cidr
+ * @returns
  */
 function processIPCidr(cidr) {
-  return cidrTools.merge(cidr.split('\n').filter(Boolean));
+  return cidrTools.merge(cidr.split("\n").filter(Boolean));
 }
 
 async function main() {
@@ -29,6 +29,14 @@ async function main() {
     .then((r) => r.text())
     .then(processIPCidr);
 
+  // internal IPs
+  ipv4List.push(
+    "10.0.0.0/8",
+    "172.16.0.0/12",
+    "192.168.0.0/16",
+    "100.64.0.0/10"
+  );
+
   console.log(`ipv4 list count: ${ipv4List.length}`);
   console.log(`ipv6 list count: ${ipv6List.length}`);
 
@@ -36,14 +44,15 @@ async function main() {
   script +=
     "/ip firewall address-list remove [/ip firewall address-list find list=China]\n";
   script += "/ip firewall address-list\n";
-  ipv4List.forEach((ip) => {
-    script += `:do { add address=${ip} list=China } on-error={}\n`;
-  });
-  ipv6List.forEach((ip) => {
+  [].concat(ipv4List, ipv6List).forEach((ip) => {
     script += `:do { add address=${ip} list=China } on-error={}\n`;
   });
 
-  return fse.writeFile(path.join(__dirname, "../output/china-ip.rsc"), script, 'utf8');
+  return fse.writeFile(
+    path.join(__dirname, "../output/china-ip.rsc"),
+    script,
+    "utf8"
+  );
 }
 
 main();
