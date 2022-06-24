@@ -6164,6 +6164,10 @@
 :do { add address=223.255.0.0/17 list=China } on-error={}
 :do { add address=223.255.236.0/22 list=China } on-error={}
 :do { add address=223.255.252.0/23 list=China } on-error={}
+:do { add address=10.0.0.0/8 list=China } on-error={}
+:do { add address=172.16.0.0/12 list=China } on-error={}
+:do { add address=192.168.0.0/16 list=China } on-error={}
+:do { add address=100.64.0.0/10 list=China } on-error={}
 :do { add address=2a0a:2840:20::/43 list=China } on-error={}
 :do { add address=2a0a:2842:100::/48 list=China } on-error={}
 :do { add address=2a0a:2842:416::/48 list=China } on-error={}
