@@ -1,0 +1,33 @@
+name: Build
+
+on:
+  push:
+    branches: [ master ]
+
+  workflow_dispatch:
+  schedule: 
+    - cron:  '0 2 */3 * *'
+
+
+jobs:
+  Build:
+    name: build IP List
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 6.32.10
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'pnpm'
+      - run: pnpm install
+      - run: node scripts/ros-cn-ip.mjs
+      - name: release
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output

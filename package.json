@@ -1,0 +1,21 @@
+{
+  "name": "ruleset",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giuem/ruleset.git"
+  },
+  "author": "giuem",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/giuem/ruleset/issues"
+  },
+  "homepage": "https://github.com/giuem/ruleset#readme",
+  "dependencies": {
+    "fs-extra": "^10.1.0",
+    "node-fetch": "^3.2.6"
+  }
+}

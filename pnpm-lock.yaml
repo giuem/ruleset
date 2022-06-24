@@ -1,0 +1,96 @@
+lockfileVersion: 5.3
+
+specifiers:
+  fs-extra: ^10.1.0
+  node-fetch: ^3.2.6
+
+dependencies:
+  fs-extra: registry.npmmirror.com/fs-extra/10.1.0
+  node-fetch: registry.npmmirror.com/node-fetch/3.2.6
+
+packages:
+
+  registry.npmmirror.com/data-uri-to-buffer/4.0.0:
+    resolution: {integrity: sha512-Vr3mLBA8qWmcuschSLAOogKgQ/Jwxulv3RNE4FXnYWRGujzrRWQI4m12fQqRkwX06C0KanhLr4hK+GydchZsaA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/data-uri-to-buffer/-/data-uri-to-buffer-4.0.0.tgz}
+    name: data-uri-to-buffer
+    version: 4.0.0
+    engines: {node: '>= 12'}
+    dev: false
+
+  registry.npmmirror.com/fetch-blob/3.1.5:
+    resolution: {integrity: sha512-N64ZpKqoLejlrwkIAnb9iLSA3Vx/kjgzpcDhygcqJ2KKjky8nCgUQ+dzXtbrLaWZGZNmNfQTsiQ0weZ1svglHg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/fetch-blob/-/fetch-blob-3.1.5.tgz}
+    name: fetch-blob
+    version: 3.1.5
+    engines: {node: ^12.20 || >= 14.13}
+    dependencies:
+      node-domexception: registry.npmmirror.com/node-domexception/1.0.0
+      web-streams-polyfill: registry.npmmirror.com/web-streams-polyfill/3.2.1
+    dev: false
+
+  registry.npmmirror.com/formdata-polyfill/4.0.10:
+    resolution: {integrity: sha512-buewHzMvYL29jdeQTVILecSaZKnt/RJWjoZCF5OW60Z67/GmSLBkOFM7qh1PI3zFNtJbaZL5eQu1vLfazOwj4g==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/formdata-polyfill/-/formdata-polyfill-4.0.10.tgz}
+    name: formdata-polyfill
+    version: 4.0.10
+    engines: {node: '>=12.20.0'}
+    dependencies:
+      fetch-blob: registry.npmmirror.com/fetch-blob/3.1.5
+    dev: false
+
+  registry.npmmirror.com/fs-extra/10.1.0:
+    resolution: {integrity: sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/fs-extra/-/fs-extra-10.1.0.tgz}
+    name: fs-extra
+    version: 10.1.0
+    engines: {node: '>=12'}
+    dependencies:
+      graceful-fs: registry.npmmirror.com/graceful-fs/4.2.10
+      jsonfile: registry.npmmirror.com/jsonfile/6.1.0
+      universalify: registry.npmmirror.com/universalify/2.0.0
+    dev: false
+
+  registry.npmmirror.com/graceful-fs/4.2.10:
+    resolution: {integrity: sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/graceful-fs/-/graceful-fs-4.2.10.tgz}
+    name: graceful-fs
+    version: 4.2.10
+    dev: false
+
+  registry.npmmirror.com/jsonfile/6.1.0:
+    resolution: {integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jsonfile/-/jsonfile-6.1.0.tgz}
+    name: jsonfile
+    version: 6.1.0
+    dependencies:
+      universalify: registry.npmmirror.com/universalify/2.0.0
+    optionalDependencies:
+      graceful-fs: registry.npmmirror.com/graceful-fs/4.2.10
+    dev: false
+
+  registry.npmmirror.com/node-domexception/1.0.0:
+    resolution: {integrity: sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/node-domexception/-/node-domexception-1.0.0.tgz}
+    name: node-domexception
+    version: 1.0.0
+    engines: {node: '>=10.5.0'}
+    dev: false
+
+  registry.npmmirror.com/node-fetch/3.2.6:
+    resolution: {integrity: sha512-LAy/HZnLADOVkVPubaxHDft29booGglPFDr2Hw0J1AercRh01UiVFm++KMDnJeH9sHgNB4hsXPii7Sgym/sTbw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/node-fetch/-/node-fetch-3.2.6.tgz}
+    name: node-fetch
+    version: 3.2.6
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    dependencies:
+      data-uri-to-buffer: registry.npmmirror.com/data-uri-to-buffer/4.0.0
+      fetch-blob: registry.npmmirror.com/fetch-blob/3.1.5
+      formdata-polyfill: registry.npmmirror.com/formdata-polyfill/4.0.10
+    dev: false
+
+  registry.npmmirror.com/universalify/2.0.0:
+    resolution: {integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/universalify/-/universalify-2.0.0.tgz}
+    name: universalify
+    version: 2.0.0
+    engines: {node: '>= 10.0.0'}
+    dev: false
+
+  registry.npmmirror.com/web-streams-polyfill/3.2.1:
+    resolution: {integrity: sha512-e0MO3wdXWKrLbL0DgGnUV7WHVuw9OUvL4hjgnPkIeEvESk74gAITi5G606JtZPp39cd8HA9VQzCIvA49LpPN5Q==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/web-streams-polyfill/-/web-streams-polyfill-3.2.1.tgz}
+    name: web-streams-polyfill
+    version: 3.2.1
+    engines: {node: '>= 8'}
+    dev: false
