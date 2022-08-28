@@ -6191,8 +6191,10 @@
 :do { add address=2a0d:2587:3506::/47 list=China } on-error={}
 :do { add address=2a0d:2587:3508::/48 list=China } on-error={}
 :do { add address=2a0d:2587:3510::/46 list=China } on-error={}
+:do { add address=2a0d:2587:3517::/48 list=China } on-error={}
 :do { add address=2a0d:2587:3600::/40 list=China } on-error={}
 :do { add address=2a0d:2587:3800::/37 list=China } on-error={}
+:do { add address=2a0d:2587:4000::/36 list=China } on-error={}
 :do { add address=2a0d:2587:6000::/35 list=China } on-error={}
 :do { add address=2a0d:2587:8500::/40 list=China } on-error={}
 :do { add address=2a0d:2587:8610::/44 list=China } on-error={}
@@ -6240,6 +6242,7 @@
 :do { add address=2a0e:b107:272::/48 list=China } on-error={}
 :do { add address=2a0e:b107:580::/44 list=China } on-error={}
 :do { add address=2a0e:b107:1470::/44 list=China } on-error={}
+:do { add address=2a0e:b107:1572::/47 list=China } on-error={}
 :do { add address=2a0e:b107:1787::/48 list=China } on-error={}
 :do { add address=2a0e:b107:1980::/48 list=China } on-error={}
 :do { add address=2a0e:b107:bd0::/48 list=China } on-error={}
@@ -6314,7 +6317,6 @@
 :do { add address=2a06:a005:1310::/44 list=China } on-error={}
 :do { add address=2a06:a005:1320::/44 list=China } on-error={}
 :do { add address=2a06:a005:1340::/43 list=China } on-error={}
-:do { add address=2a06:a005:1550::/44 list=China } on-error={}
 :do { add address=2a06:a005:1700::/44 list=China } on-error={}
 :do { add address=2a06:a005:a13::/48 list=China } on-error={}
 :do { add address=2a06:a005:d00::/44 list=China } on-error={}
@@ -6732,6 +6734,7 @@
 :do { add address=2404:f4c0:f708::/48 list=China } on-error={}
 :do { add address=2404:f4c0:f720::/47 list=China } on-error={}
 :do { add address=2404:f4c0:f723::/48 list=China } on-error={}
+:do { add address=2404:f4c0:f810::/44 list=China } on-error={}
 :do { add address=2404:f4c0:f900::/47 list=China } on-error={}
 :do { add address=2404:f4c0:f940::/47 list=China } on-error={}
 :do { add address=2404:f4c0:f942::/48 list=China } on-error={}
@@ -6765,7 +6768,6 @@
 :do { add address=2405:68c0:21::/48 list=China } on-error={}
 :do { add address=2405:84c0:8d00::/40 list=China } on-error={}
 :do { add address=2405:84c0:99f0::/44 list=China } on-error={}
-:do { add address=2405:84c0:9000::/44 list=China } on-error={}
 :do { add address=2405:84c0:9700::/44 list=China } on-error={}
 :do { add address=2405:84c0:fa00::/40 list=China } on-error={}
 :do { add address=2405:84c0:fbbb::/48 list=China } on-error={}
@@ -6799,7 +6801,7 @@
 :do { add address=2406:840:80::/47 list=China } on-error={}
 :do { add address=2406:840:90::/48 list=China } on-error={}
 :do { add address=2406:840:100::/47 list=China } on-error={}
-:do { add address=2406:840:110::/48 list=China } on-error={}
+:do { add address=2406:840:110::/47 list=China } on-error={}
 :do { add address=2406:840:300::/48 list=China } on-error={}
 :do { add address=2406:840:380::/48 list=China } on-error={}
 :do { add address=2406:840:400::/48 list=China } on-error={}
@@ -7398,6 +7400,8 @@
 :do { add address=2602:fbda:666::/48 list=China } on-error={}
 :do { add address=2602:fbda:700::/44 list=China } on-error={}
 :do { add address=2602:fc1d::/47 list=China } on-error={}
+:do { add address=2602:fd92:630::/47 list=China } on-error={}
+:do { add address=2602:fd92:632::/48 list=China } on-error={}
 :do { add address=2602:fd92:800::/40 list=China } on-error={}
 :do { add address=2602:fed2:731d::/48 list=China } on-error={}
 :do { add address=2602:feda:1bf::/48 list=China } on-error={}
@@ -7412,6 +7416,7 @@
 :do { add address=2602:feda:af3::/48 list=China } on-error={}
 :do { add address=2602:feda:d30::/44 list=China } on-error={}
 :do { add address=2602:feda:d80::/48 list=China } on-error={}
+:do { add address=2602:feda:f000::/44 list=China } on-error={}
 :do { add address=2605:9d80:8001::/48 list=China } on-error={}
 :do { add address=2605:9d80:8011::/48 list=China } on-error={}
 :do { add address=2605:9d80:8021::/48 list=China } on-error={}
